@@ -1,0 +1,8 @@
+﻿{
+  "ConnectionStrings": {
+    "ReleaseConnection": "server=db;UserId=root;Password=12345678;database=AromatoDb;"
+  }
+}
+//"ReleaseConnection": "server=172.17.0.2;UserId=root;Password=12345678;database=swdb;"
+//"ReleaseConnection": "server=localhost;UserId=root;Password=1234;database=SquidWordsDb;"
+//"ReleaseConnection": "server=172.17.0.2;UserId=root;Password=048261030hae3923l4j43s58632dsfsl234;database=MoonpaperDb2;"
