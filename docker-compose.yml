@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  aromato:
+    image: aromato
+    container_name: aromato
+    build:
+      context: .
+      dockerfile: Aromato/Dockerfile
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "12345678"
+  
+  nginx-proxy:
+    image: nginx
+    container_name: nginx
+    depends_on:
+        - aromato
+        - db
+    volumes:
+      - ./Aromato/nginx/default:/etc/nginx/sites-available/default
+    ports:
+      - 9000:80

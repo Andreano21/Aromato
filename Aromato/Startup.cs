@@ -38,6 +38,7 @@ namespace Aromato
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseStaticFiles();
 
             app.UseRouting();
 
