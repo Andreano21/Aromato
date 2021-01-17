@@ -24,6 +24,6 @@ services:
         - aromato
         - db
     volumes:
-      - ./Aromato/nginx/default:/etc/nginx/sites-available/default
+      - ./Aromato/nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
       - 9000:80
